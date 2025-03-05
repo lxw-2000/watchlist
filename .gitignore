@@ -7,4 +7,4 @@ env/
 Windows/
 .env
 .flaskenv
-.db
+data.db
