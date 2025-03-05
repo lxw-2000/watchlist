@@ -24,6 +24,10 @@ def index():
     movies = Movie.query.all()
     return render_template("index.html", user=user, movies=movies)
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
 @app.cli.command()
 @click.option('--drop', is_flag=True, help='Create after drop.')
 def initdb(drop):
