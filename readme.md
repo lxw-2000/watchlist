@@ -12,7 +12,11 @@ flask init-db
 ```
 forge data:
 ```
-flask forge
+flask forge --drop[optional]
+```
+setup admin:
+```
+flask admin
 ```
 
 
